@@ -1,16 +1,5 @@
-.container
-{
-  width: 960px;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin 0 auto;
-}
-
-.borderbox
-{
-  box-sizing: border-box;
-}
-
+/* *********   Element Styles   ***************** */
+/* ********** Body ************* */
 body
 {
   background-color: #ffffff;
@@ -21,25 +10,10 @@ body
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-sarif;
 }
 
-article p
+/* ********** Elements / Tags ************* */
+p
 {
- color: #848484
-}
-article h1
-{
-  font-size:14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-nav
-{
-  text-align: right;
-}
-
-header h1
-{
-    text-align: center;
+  text-align:justify;
 }
 
 h1, h2, h3, h4
@@ -53,16 +27,55 @@ a
   text-decoration: none;
 }
 
-header a:link
+/* ***********  Article  ************** */
+article p
 {
- color: #000000;
+ color: #848484
 }
 
-header a:hover
+article h1
 {
+  font-size:14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+article img
+{
+  width:100%;
+}
+
+/* ***********  Header  ************** */
+header h1
+{
+    text-align: center;
+}
+
+header li a:hover
+{
+  box-shadow: inset 0 3px 0 0 #45a2da;
   color: #45a2da;
 }
 
+header li
+{
+   display: inline-block;
+}
+
+header li a
+{
+  color: #000000;
+}
+
+/* ***********  Address  ************** */
+address
+{
+ margin-top:30%
+ margin-left:10%
+}
+
+
+/* ***********  Footer  ************** */
 footer
 {
   border-top: 1px solid rgba(0,0,0,0.085);
@@ -70,12 +83,91 @@ footer
   background-color: #000000;
 }
 
+footer h3
+{
+  text-align: center;
+  font-size:2em;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
 footer a:link
 {
   color: #ffffff;
+}
+
+footer a:hover
+{
+  color: #45a2da;
+}
+
+footer a:visited
+{
+ color: green;
 }
 
 footer aside h3
 {
   color: #848484;
 }
+
+footer nav
+{
+  font-size: 0.78em;
+}
+
+/* *********   Classes   ***************** */
+.container
+{
+  width: 960px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin 0 auto;
+}
+
+.borderbox
+{
+  box-sizing: border-box;
+}
+
+.alt-link
+{
+ background-color: #000000;
+
+}
+.alt-link a 
+{ 
+  color: #ffffff;
+}
+
+.col-1-2
+{
+ float: left;
+ padding-left: 2%;
+ padding-right: 0%;
+ width: 45%;
+}
+
+.col-1-3
+{
+ float: left;
+ padding-left: 3%;
+ padding-right: 3%;
+ width: 31%;
+}
+
+.col-2-3
+{
+ float: right;
+ padding-left: 2%;
+ padding-right: 2%;
+ width: 62.5%;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
