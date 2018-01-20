@@ -70,8 +70,8 @@ header li a
 /* ***********  Address  ************** */
 address
 {
- margin-top:30%
- margin-left:10%
+  margin-top: 6%;
+  margin-left:10%;
 }
 
 
@@ -122,7 +122,7 @@ footer nav
   width: 960px;
   padding-right: 30px;
   padding-left: 30px;
-  margin 0 auto;
+  margin: 0 auto;
 }
 
 .borderbox
@@ -170,4 +170,16 @@ footer nav
   clear: both;
 }
 
+.nameText
+{
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px #27aae0;
+  font-size: 1.5em;
+}
 
+.copy
+{
+  text-align:center;
+  font-size:0.7em;
+  color: #f0f0f0;
+}
